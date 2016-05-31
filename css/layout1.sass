@@ -1,0 +1,117 @@
+// Base Styles
+=pimage($p)
+  $url:"../images/#{$p}.jpg"
+  height: 310px
+  background:
+    image: url($url)
+    size: cover
+
+body
+  font-family: "Open Sans", sans-serif
+
+h1,h2
+  color: #ccc
+  weight: 300
+
+figure
+  margin: auto
+
+.content
+  article
+    padding: 100px 0
+    max-width: 640px
+    margin: 0 auto
+    text-align: center
+
+img
+  max-width: 100%
+
+
+// Parallax
+.bird-box
+  position: relative
+  height: 650px
+  background:
+    image: url(../images/bird-bg.jpg)
+    size: cover
+    position: top center
+    attachment: fixed
+  overflow: hidden
+.logo
+  width: 500px
+  height: 300px
+  background:
+    image: url(../images/black-bird-logo.svg)
+    position: center
+    repeat: no-repeat
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateX(-50%)
+  margin-top: -150px
+.fore-bird
+  width: 960px
+  height: 733px
+  background:
+    image: url(../images/fore-bird.png)
+    repeat: no-repeat
+    position: bottom right
+  position: absolute
+  left: 50%
+  transform: translateX(-40%)
+  top: 380px
+.back-bird
+  width: 264px
+  height: 298px
+  background:
+    image: url(../images/back-bird.png)
+    position: top left
+    repeat: no-repeat
+  position: absolute
+  left: 20%
+
+// grid
+.caption
+  text-align: center
+  margin: 5px
+button
+  margin: 10px 10px 30px
+
+.pics
+  width: 60%
+  margin: auto
+  figure
+    opacity: 0
+    transition: all 2s ease
+    position: relative
+    transform: translateX(200px)
+    overflow: hidden
+    @for $i from 1 through 9
+      .img#{$i}
+        +pimage(model#{$i})
+    figcaption
+      transition: all 0.2s linear
+      position: absolute
+      top: 60%
+      left: -100%
+      background-color: #000
+      color: white
+    &:hover
+      .aa
+        background:
+          size: 120% 120%
+      figcaption
+        left: 0
+  .animate
+    opacity: 1
+    transform: translateX(0px)
+.summer
+  height: 800px
+  width: 700px
+  border-radius: 50%
+  margin: auto
+  background:
+    image: url(../images/model10.jpeg)
+    size: cover
+    position: center
+    attachment: fixed

@@ -126,13 +126,46 @@ button {
     transform: translateX(0px); }
 
 .summer {
-  height: 800px;
-  width: 700px;
+  height: 900px;
+  width: 800px;
   border-radius: 50%;
   margin: auto;
+  position: relative;
   background-image: url(../images/model10.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: center 0px;
   background-attachment: fixed; }
+  .summer .tint {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: rgba(20, 20, 20, 0.7);
+    display: flex;
+    justify-content: center; }
+  .summer .txt {
+    margin-top: 30%;
+    color: white;
+    font-size: 2.8em;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.8em; }
+    .summer .txt strong {
+      display: block;
+      font-size: 1.5em; }
+      .summer .txt strong span {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.4em;
+        font-style: italic; }
+    .summer .txt a {
+      border: 2px solid white;
+      text-decoration: none;
+      color: white;
+      padding: 10px; }
+      .summer .txt a:hover {
+        color: rgba(255, 255, 255, 0.5);
+        border: 4px solid rgba(255, 255, 255, 0.5); }
 
 /*# sourceMappingURL=layout1.css.map */

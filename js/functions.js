@@ -18,6 +18,11 @@ $(document).ready(
           },200*(i+1));
         });
       }
+      if (si > $(".summer").offset().top - $(window).height()) {
+        let s = ($(".summer").offset().top - $(window).height() - si+900)/400
+        console.log(s);
+        $(".tint").css({"opacity": + s +""});
+      }
     });
 
   }

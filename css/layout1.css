@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: "Open Sans", sans-serif; }
 
@@ -19,7 +22,7 @@ img {
 
 .bird-box {
   position: relative;
-  height: 650px;
+  height: 100vh;
   background-image: url(../images/bird-bg.jpg);
   background-size: cover;
   background-position: top center;
@@ -63,71 +66,203 @@ img {
   margin: 5px; }
 
 button {
-  margin: 10px 10px 30px; }
+  margin: 20px auto;
+  position: absolute;
+  padding-right: 15px;
+  padding-left: 15px;
+  left: 50%;
+  transform: translate(-50%); }
 
 .pics {
-  width: 60%;
-  margin: auto; }
+  transform: translateY(-10%);
+  width: 80%;
+  height: 1300px;
+  margin: auto;
+  overflow: hidden; }
   .pics figure {
+    margin-top: 100px;
+    width: 80%;
     opacity: 0;
     transition: all 2s ease;
-    position: relative;
-    transform: translateX(200px);
-    overflow: hidden; }
+    transform: translateX(200px); }
     .pics figure .img1 {
-      height: 310px;
+      height: 50vh;
       background-image: url("../images/model1.jpg");
-      background-size: cover; }
+      background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .pics figure .img1 figcaption {
+        transition: all 0.5s ease;
+        width: 100%;
+        position: absolute;
+        left: -100vw;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white; }
+      .pics figure .img1:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.1, 1.1); }
+        .pics figure .img1:hover figcaption {
+          left: 0; }
     .pics figure .img2 {
-      height: 310px;
+      height: 50vh;
       background-image: url("../images/model2.jpg");
-      background-size: cover; }
+      background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .pics figure .img2 figcaption {
+        transition: all 0.5s ease;
+        width: 100%;
+        position: absolute;
+        left: -100vw;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white; }
+      .pics figure .img2:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.1, 1.1); }
+        .pics figure .img2:hover figcaption {
+          left: 0; }
     .pics figure .img3 {
-      height: 310px;
+      height: 50vh;
       background-image: url("../images/model3.jpg");
-      background-size: cover; }
+      background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .pics figure .img3 figcaption {
+        transition: all 0.5s ease;
+        width: 100%;
+        position: absolute;
+        left: -100vw;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white; }
+      .pics figure .img3:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.1, 1.1); }
+        .pics figure .img3:hover figcaption {
+          left: 0; }
     .pics figure .img4 {
-      height: 310px;
+      height: 50vh;
       background-image: url("../images/model4.jpg");
-      background-size: cover; }
+      background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .pics figure .img4 figcaption {
+        transition: all 0.5s ease;
+        width: 100%;
+        position: absolute;
+        left: -100vw;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white; }
+      .pics figure .img4:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.1, 1.1); }
+        .pics figure .img4:hover figcaption {
+          left: 0; }
     .pics figure .img5 {
-      height: 310px;
+      height: 50vh;
       background-image: url("../images/model5.jpg");
-      background-size: cover; }
+      background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .pics figure .img5 figcaption {
+        transition: all 0.5s ease;
+        width: 100%;
+        position: absolute;
+        left: -100vw;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white; }
+      .pics figure .img5:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.1, 1.1); }
+        .pics figure .img5:hover figcaption {
+          left: 0; }
     .pics figure .img6 {
-      height: 310px;
+      height: 50vh;
       background-image: url("../images/model6.jpg");
-      background-size: cover; }
+      background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .pics figure .img6 figcaption {
+        transition: all 0.5s ease;
+        width: 100%;
+        position: absolute;
+        left: -100vw;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white; }
+      .pics figure .img6:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.1, 1.1); }
+        .pics figure .img6:hover figcaption {
+          left: 0; }
     .pics figure .img7 {
-      height: 310px;
+      height: 50vh;
       background-image: url("../images/model7.jpg");
-      background-size: cover; }
+      background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .pics figure .img7 figcaption {
+        transition: all 0.5s ease;
+        width: 100%;
+        position: absolute;
+        left: -100vw;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white; }
+      .pics figure .img7:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.1, 1.1); }
+        .pics figure .img7:hover figcaption {
+          left: 0; }
     .pics figure .img8 {
-      height: 310px;
+      height: 50vh;
       background-image: url("../images/model8.jpg");
-      background-size: cover; }
+      background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .pics figure .img8 figcaption {
+        transition: all 0.5s ease;
+        width: 100%;
+        position: absolute;
+        left: -100vw;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white; }
+      .pics figure .img8:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.1, 1.1); }
+        .pics figure .img8:hover figcaption {
+          left: 0; }
     .pics figure .img9 {
-      height: 310px;
+      height: 50vh;
       background-image: url("../images/model9.jpg");
-      background-size: cover; }
-    .pics figure figcaption {
-      transition: all 0.2s linear;
-      position: absolute;
-      top: 60%;
-      left: -100%;
-      background-color: #000;
-      color: white; }
-    .pics figure:hover .aa {
-      background-size: 120% 120%; }
-    .pics figure:hover figcaption {
-      left: 0; }
+      background-size: cover;
+      position: relative;
+      overflow: hidden; }
+      .pics figure .img9 figcaption {
+        transition: all 0.5s ease;
+        width: 100%;
+        position: absolute;
+        left: -100vw;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white; }
+      .pics figure .img9:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.1, 1.1); }
+        .pics figure .img9:hover figcaption {
+          left: 0; }
   .pics .animate {
     opacity: 1;
     transform: translateX(0px); }
 
 .summer {
-  height: 900px;
-  width: 800px;
+  height: 150vh;
+  width: 70vw;
   border-radius: 50%;
   margin: auto;
   position: relative;
@@ -146,7 +281,7 @@ button {
     display: flex;
     justify-content: center; }
   .summer .txt {
-    margin-top: 30%;
+    margin-top: 40vh;
     color: white;
     font-size: 2.8em;
     font-weight: 100;
@@ -167,5 +302,12 @@ button {
       .summer .txt a:hover {
         color: rgba(255, 255, 255, 0.5);
         border: 4px solid rgba(255, 255, 255, 0.5); }
+
+@media(max-width: 800px) {
+  figcaption {
+    font-size: 0.7em; } }
+@media(max-width: 600px) {
+  figcaption {
+    font-size: 1em; } }
 
 /*# sourceMappingURL=layout1.css.map */

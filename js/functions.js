@@ -15,7 +15,7 @@ $(document).ready(
         $(".pics figure").each(function(i) {
           setTimeout(function() {
             $(".pics figure").eq(i).addClass("animate");
-          },200*(i+1));
+          },400*(i+1));
         });
       }
       if (si > $(".summer").offset().top - $(window).height()) {

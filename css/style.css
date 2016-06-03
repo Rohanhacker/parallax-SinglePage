@@ -932,7 +932,8 @@ button {
   margin: 30px auto; }
 
 .pics {
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 100px; }
   .pics figure {
     opacity: 0;
     transition: all 2s ease;

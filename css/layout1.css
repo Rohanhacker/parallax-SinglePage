@@ -10,6 +10,7 @@ figure {
 
 .content {
   position: relative;
+  z-index: 4;
   background: white;
   margin-bottom: 400px;
   overflow: hidden; }
@@ -24,6 +25,9 @@ figure {
 
 img {
   max-width: 100%; }
+
+header {
+  z-index: 4; }
 
 .bird-box {
   position: relative;
@@ -308,7 +312,8 @@ button {
         border: 4px solid rgba(255, 255, 255, 0.5); }
 
 .blog {
-  margin-top: 200px; }
+  margin-top: 200px;
+  margin-bottom: 200px; }
   .blog .post {
     position: relative;
     background-color: white; }
@@ -318,6 +323,26 @@ button {
     z-index: 2; }
   .blog .post3 {
     transform: translate(-100px, 20px); }
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  z-index: 3;
+  background-color: rgba(0, 11, 33, 0.8); }
+  footer .ftr {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px; }
+    footer .ftr li {
+      list-style-type: none; }
+    footer .ftr a {
+      text-decoration: none;
+      color: white; }
+    footer .ftr input {
+      text-align: center;
+      color: black; }
 
 @media(max-width: 800px) {
   .summer {

@@ -18,6 +18,7 @@ figure
 
 .content
   position: relative
+  z-index: 4
   background: white
   margin-bottom: 400px
   overflow: hidden
@@ -34,6 +35,8 @@ img
   max-width: 100%
 
 // Parallax
+header
+  z-index: 4
 .bird-box
   position: relative
   height: 100vh
@@ -158,6 +161,7 @@ button
 
 .blog
   margin-top: 200px
+  margin-bottom: 200px
   .post
     position: relative
     background-color: white
@@ -167,6 +171,25 @@ button
     z-index: 2
   .post3
     transform: translate(-100px,20px)
+footer
+  position: fixed
+  width: 100%
+  bottom: 0
+  color: white
+  z-index: 3
+  background-color: rgba(0, 11, 33, 0.8)
+  .ftr
+    max-width: 800px
+    margin: auto
+    padding: 40px
+    li
+      list-style-type: none
+    a
+      text-decoration: none
+      color: white
+    input
+      text-align: center
+      color: black
 
 @media(max-width: 800px)
   .summer

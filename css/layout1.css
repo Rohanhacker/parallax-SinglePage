@@ -35,7 +35,7 @@ img {
   overflow: hidden; }
 
 .logo {
-  width: 70vw;
+  width: 40vw;
   height: 300px;
   background-image: url(../images/black-bird-logo.svg);
   background-position: center;
@@ -284,7 +284,7 @@ button {
     display: flex;
     justify-content: center; }
   .summer .txt {
-    margin-top: 20vh;
+    margin-top: 30vh;
     color: white;
     font-size: 2.8em;
     font-weight: 100;
@@ -305,6 +305,18 @@ button {
       .summer .txt a:hover {
         color: rgba(255, 255, 255, 0.5);
         border: 4px solid rgba(255, 255, 255, 0.5); }
+
+.blog {
+  margin-top: 200px; }
+  .blog .post {
+    position: relative;
+    background-color: white; }
+  .blog .post1 {
+    transform: translate(100px, 20px); }
+  .blog .post2 {
+    z-index: 2; }
+  .blog .post3 {
+    transform: translate(-100px, 20px); }
 
 @media(max-width: 800px) {
   .summer {

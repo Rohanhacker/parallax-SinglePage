@@ -20,8 +20,14 @@ $(document).ready(
       }
       if (si > $(".summer").offset().top - $(window).height()) {
         let s = ($(".summer").offset().top - $(window).height() - si+900)/400
-        console.log(s);
         $(".tint").css({"opacity": + s +""});
+      }
+      if (si > $(".blog").offset().top - $(window).height()) {
+            let s1=20
+            let s = Math.min(0,si - $(".post").offset().top + $(window).height() -350)
+            $(".post1").css({"transform": "translate("+ s + "px," + s1 +"px)"});
+            $(".post3").css({"transform": "translate("+ -s + "px,"+ s1 +"px)"});
+
       }
     });
 

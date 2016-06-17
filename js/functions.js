@@ -1,5 +1,8 @@
 $(document).ready(
   function() {
+    $(".menu").click(function() {
+      $(".fullmenu").toggleClass("showmenu");
+    });
     $(window).scroll(function() {
       var si = window.pageYOffset;
       $(".logo").css({

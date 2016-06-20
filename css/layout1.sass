@@ -9,18 +9,36 @@
     size: cover
 .fullmenu
   position: fixed
-  right: 0
-  left: 0
   opacity: 0
   z-index: 5
   background:
     color: rgba(0, 200, 100, 0.92)
+  .contentmenu
+    font:
+      size: 2.5em
+    ul
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      height: 100vh
+      li
+        height: 10vh
+        display: block
+        list-style-type: none
+        a
+          color: white
+          &:hover
+            color: black
 .showmenu
   top: 0
   bottom: 0
+  right: 0
+  left: 0
   opacity: 1
 .menu
   position: fixed
+  opacity: 0
   top: 5%
   right: 5%
   z-index: 6

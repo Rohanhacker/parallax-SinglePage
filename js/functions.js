@@ -21,6 +21,12 @@ $(document).ready(
           },400*(i+1));
         });
       }
+      if(si > $(".content").offset().top) {
+        $(".menu").css({"opacity": 1});
+      }
+      else {
+        $(".menu").css({"opacity": 0});
+      }
       if (si > $(".summer").offset().top - $(window).height()) {
         let s = ($(".summer").offset().top - $(window).height() - si+900)/400
         $(".tint").css({"opacity": + s +""});
